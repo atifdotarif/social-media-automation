@@ -370,9 +370,10 @@ export default function Home() {
                   </label>
                   <textarea
                     readOnly
-                    className="w-full p-3.5 border-2 border-gray-200 rounded-xl text-sm resize-none bg-gray-50 focus:outline-none focus:border-purple-400 transition-colors"
+                    className="w-full p-3.5 border-2 border-gray-200 rounded-xl text-sm resize-none bg-gray-50 text-gray-900 focus:outline-none focus:border-purple-400 transition-colors"
                     rows={4}
                     value={idea.Caption || ''}
+                    style={{ color: '#111827' }}
                   />
                 </div>
 
@@ -412,8 +413,9 @@ export default function Home() {
                     type="text"
                     value={imageLink}
                     onChange={(e) => updateImageLink(index, e.target.value)}
-                    className="w-full p-3.5 border-2 border-gray-200 rounded-xl text-sm focus:border-purple-500 focus:ring-2 focus:ring-purple-200 focus:outline-none transition-all bg-white"
+                    className="w-full p-3.5 border-2 border-gray-200 rounded-xl text-sm text-gray-900 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 focus:outline-none transition-all bg-white"
                     placeholder="Enter image URL"
+                    style={{ color: '#111827' }}
                   />
                   <div className="mt-3 w-full h-56 bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl overflow-hidden flex items-center justify-center shadow-inner border-2 border-gray-200">
                     {imageLink ? (

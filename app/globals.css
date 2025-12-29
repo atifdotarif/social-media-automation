@@ -52,3 +52,15 @@ body {
 .animate-scaleIn {
   animation: scaleIn 0.3s ease-out;
 }
+
+/* Ensure read-only textareas have visible text */
+textarea[readonly] {
+  color: #111827 !important;
+  -webkit-text-fill-color: #111827 !important;
+}
+
+/* Ensure input fields have visible text */
+input[type="text"] {
+  color: #111827 !important;
+  -webkit-text-fill-color: #111827 !important;
+}
